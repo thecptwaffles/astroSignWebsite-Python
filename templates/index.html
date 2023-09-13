@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zodiac Sign Finder</title>
+</head>
+<body>
+    <h1>Zodiac Sign Finder</h1>
+    <form method="POST">
+        <label for="date_input">Enter a date (YYYY-MM-DD):</label>
+        <input type="text" name="date_input" id="date_input" required>
+        <button type="submit">Find Zodiac Sign</button>
+    </form>
+    {% if zodiac_sign %}
+    <p>Your zodiac sign is: {{ zodiac_sign }}</p>
+    {% endif %}
+</body>
+</html>
+
